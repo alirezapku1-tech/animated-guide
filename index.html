@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profil Saya</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome untuk ikon sosmed -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: #fff7f0;
+      color: #333;
+    }
+
+    /* Teks Berjalan */
+    .marquee {
+      background: #ffb6b9;
+      color: white;
+      padding: 12px 0;
+      font-size: 1.1em;
+      font-weight: 600;
+      overflow: hidden;
+    }
+
+    .marquee span {
+      display: inline-block;
+      white-space: nowrap;
+      animation: scroll 12s linear infinite;
+      padding-left: 100%;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* Kontainer Profil */
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #ffb6b9;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin: 10px 0;
+      color: #444;
+    }
+
+    p.bio {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 25px;
+      padding: 0 20px;
+    }
+
+    /* Link Sosial Media */
+    .social-links a {
+      margin: 0 10px;
+      font-size: 24px;
+      color: #ffb6b9;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #fa7e85;
+      transform: scale(1.2);
+    }
+
+    .insta-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #ffb6b9;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .insta-link:hover {
+      background: #fa7e85;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 30px 20px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Teks Berjalan -->
+  <div class="marquee">
+    <span>✨ Selamat datang di halaman profil saya! Yuk, kenalan lebih dekat ✨</span>
+  </div>
+
+  <!-- Konten Profil -->
+  <div class="container">
+    <img class="profile-img" src="https://via.placeholder.com/150" alt="Foto Profil Anda">
+
+    <h1>mayvani lidya⭐˂͈</h1>
+    <p class="bio">Hai! Saya seorang kreator digital yang suka desain, teknologi, dan berbagi inspirasi. Terima kasih sudah berkunjung ke halaman saya 💖</p>
+
+    <!-- Ikon Sosmed -->
+    <div class="social-links">
+      <a href="https://instagram.com/username" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com/in/username" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/username" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+
+    <!-- Tombol ke Instagram -->
+    <a class="insta-link" href="https://www.instagram.com/whoszvani?igsh=MWhtMXN0bmloYmg5bA==" target="_blank">🌸 Lihat Instagram Saya</a>
+  </div>
+
+</body>
+</html>
